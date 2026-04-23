@@ -1,4 +1,26 @@
+ Tabla 
+
+Métrica                                          Valor
+ 
+ Tamaño del arreglo (n)         	             8
+Iteraciones máximas esperadas 	            ceil(log₂ 8) = 3
+Iteraciones reales (peor caso)	                  3
+Complejidad Big O	                           O(log n)
+Comparaciones vs búsqueda lineal	     Binaria: 3 vs Lineal: 8
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
  Preguntas de Reflexión
+
+
 1.¿Cuántas comparaciones se hacen al buscar 6081 en ambos algoritmos?
 
 Binaria: 4 comparaciones (3 → 5 → 6 → 7)
