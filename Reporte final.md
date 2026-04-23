@@ -11,8 +11,7 @@ test case 1: ![alt text](<Captura de pantalla 2026-04-23 132859.png>)
 test case 2: ![alt text](<Captura de pantalla 2026-04-23 132939.png>)
 
 ## Actividad 2: Análisis con Flowgorithm
-- Diagrama: 
-## Actividad 2: Análisis con Flowgorithm
+
 
 - **Diagrama:**
   Se implementó un algoritmo de **búsqueda lineal** en Flowgorithm con la siguiente estructura:
