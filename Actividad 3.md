@@ -8,18 +8,18 @@ Ver estado: Muestra todas las solicitudes en orden de atención en la cola
 
 TABLA DE VALIDACION FIFO-ACTIVIDAD 3
 
+| Paso | Operación | Entrada | Cola Resultante | Tamaño | Verificación |
+|------|-----------|---------|-----------------|--------|--------------|
+| 1 | Enqueue | depósito | (depósito) | 1 | primer elemento ingresado |
+| 2 | Enqueue | Retiro | (depósito, Retiro) | 2 | Segundo elemento |
+| 3 | Enqueue | Transferencia | (depósito, Retiro, Transferencia) | 3 | Tercer elemento |
+| 4 | Dequeue | - | (Retiro, Transferencia) | 2 | Salió depósito (FIFO) |
+| 5 | Dequeue | - | (Transferencia) | 1 | Salió Retiro |
+| 6 | Dequeue | - | () | 0 | Salió Transferencia (Cola vacía) |
 
 
 
-Paso      operación        Entrada       cola resultante         tamaño       verificación
- 
-1         Enqueue          déposito      (déposito)                 1           primer elemento ingresado        
-2         Enqueue          Retiro         (depósito,retiro)         2               Segundo elemento
-3         Enqueue          Transferencia  (depósito,reti,trans)     3               Tercer elemento
-4         Dequeue          ---------      (reti,trans)              2               Salió depósito
-5         Dequeue          ---------     (transferencia)            1               Salió retiro 
-6         Dequeue          ---------     ---------------            0           Salió transferencia
-7         Ver estado       ---------     ---------------            0            La cola está vacia
+
 
 
 

@@ -1,13 +1,13 @@
 Tabla comparativa 
 
 
-Elemento   posición     Lineal(comp.)   Binaria(comp.)     Mejora
-1002        0              1                3           sin mejora 
-3311        4              5                3           40% menos
-5020        6              7                3           57% menos
-6081        7              8                4           50% menos
-9999        N/A            8                4           50% menos
-
+| Elemento | posición | Lineal(comp.) | Binaria(comp.) | Mejora |
+|----------|----------|---------------|----------------|--------|
+| 1002 | 0 | 1 | 3 | sin mejora |
+| 3311 | 4 | 5 | 3 | 40% menos |
+| 5020 | 6 | 7 | 3 | 57% menos |
+| 6081 | 7 | 8 | 4 | 50% menos |
+| 9999 | N/A | 8 | 4 | 50% menos |
 
 pruebas:
 

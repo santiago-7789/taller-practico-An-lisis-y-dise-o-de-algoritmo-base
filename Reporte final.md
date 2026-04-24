@@ -69,16 +69,16 @@ Ver estado (opción 3 - Consultar): Muestra todas las solicitudes actualmente en
 
  
 - Validación FIFO: 
+| Paso | Operación | Entrada | Cola Resultante | Tamaño | Verificación |
+|------|-----------|---------|-----------------|--------|--------------|
+| 1 | Enqueue | depósito | (depósito) | 1 | primer elemento ingresado |
+| 2 | Enqueue | Retiro | (depósito, Retiro) | 2 | Segundo elemento |
+| 3 | Enqueue | Transferencia | (depósito, Retiro, Transferencia) | 3 | Tercer elemento |
+| 4 | Dequeue | - | (Retiro, Transferencia) | 2 | Salió depósito (FIFO) |
+| 5 | Dequeue | - | (Transferencia) | 1 | Salió Retiro |
+| 6 | Dequeue | - | () | 0 | Salió Transferencia (Cola vacía) |
 
-Paso      operación        Entrada       cola resultante         tamaño       verificación
- 
-1         Enqueue          déposito      (déposito)                 1           primer elemento ingresado
-2         Enqueue          Retiro         (depósito,retiro)         2               Segundo elemento
-3         Enqueue          Transferencia  (depósito,reti,trans)     3               Tercer elemento
-4         Dequeue          ---------      (reti,trans)              2               Salió depósito
-5         Dequeue          ---------     (transferencia)            1               Salió retiro 
-6         Dequeue          ---------     ---------------            0           Salió transferencia
-7         Ver estado       ---------     ---------------            0            La cola está vacia
+
 
 
 pruebas: ![alt text](<Captura de pantalla 2026-04-23 135845.png>)
@@ -100,12 +100,13 @@ pruebas: ![alt text](<Captura de pantalla 2026-04-23 135845.png>)
 Tabla comparativa 
 
 
-Elemento   posición     Lineal(comp.)   Binaria(comp.)     Mejora
-1002        0              1                3           sin mejora  
-3311        4              5                3           40% menos
-5020        6              7                3           57% menos
-6081        7              8                4           50% menos
-9999        N/A            8                4           50% menos
+| Elemento | posición | Lineal(comp.) | Binaria(comp.) | Mejora |
+|----------|----------|---------------|----------------|--------|
+| 1002 | 0 | 1 | 3 | sin mejora |
+| 3311 | 4 | 5 | 3 | 40% menos |
+| 5020 | 6 | 7 | 3 | 57% menos |
+| 6081 | 7 | 8 | 4 | 50% menos |
+| 9999 | N/A | 8 | 4 | 50% menos |
 
 
 pruebas:
