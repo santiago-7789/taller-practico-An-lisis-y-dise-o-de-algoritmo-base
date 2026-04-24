@@ -67,6 +67,9 @@ dequeue (opción 2 - Atender): Atiende y elimina la primera solicitud de la cola
 Ver estado (opción 3 - Consultar): Muestra todas las solicitudes actualmente en la cola del orden de atención
 
 
+
+
+
  
 - Validación FIFO: 
 | Paso | Operación | Entrada | Cola Resultante | Tamaño | Verificación |
@@ -77,6 +80,22 @@ Ver estado (opción 3 - Consultar): Muestra todas las solicitudes actualmente en
 | 4 | Dequeue | - | (Retiro, Transferencia) | 2 | Salió depósito (FIFO) |
 | 5 | Dequeue | - | (Transferencia) | 1 | Salió Retiro |
 | 6 | Dequeue | - | () | 0 | Salió Transferencia (Cola vacía) |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
