@@ -1,7 +1,11 @@
 Operaciones
 Enqueue(opción 1): Agrega una solicitud al final de la cola, aumentando el tamaño y la cola
+
 Dequeue(opcion 2): Atiende la primera solicitud, eliminadola y avanzando en la cola
+
+
 Ver estado: Muestra todas las solicitudes en orden de atención en la cola
+
 
 
 
