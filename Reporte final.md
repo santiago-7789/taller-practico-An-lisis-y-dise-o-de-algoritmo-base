@@ -72,6 +72,8 @@ Ver estado (opción 3 - Consultar): Muestra todas las solicitudes actualmente en
 
  
 - Validación FIFO: 
+
+
 | Paso | Operación | Entrada | Cola Resultante | Tamaño | Verificación |
 |------|-----------|---------|-----------------|--------|--------------|
 | 1 | Enqueue | depósito | (depósito) | 1 | primer elemento ingresado |
@@ -80,7 +82,6 @@ Ver estado (opción 3 - Consultar): Muestra todas las solicitudes actualmente en
 | 4 | Dequeue | - | (Retiro, Transferencia) | 2 | Salió depósito (FIFO) |
 | 5 | Dequeue | - | (Transferencia) | 1 | Salió Retiro |
 | 6 | Dequeue | - | () | 0 | Salió Transferencia (Cola vacía) |
-
 
 
 
